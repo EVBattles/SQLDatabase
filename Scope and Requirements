@@ -1,0 +1,26 @@
+Scope and Requirements
+Identify the Non-Profit Organization for which you will be developing the Database System and give a short description of that Organization
+Lodi Memorial Hospital Foundation - This organization raises money for the local hospital in my home town. I worked here for a few years working directly with the database, so I have a good idea of what they need from the information they are storing. 
+Define the Scope of the Project
+Exactly what will the Database System be used for? (i.e. Purpose; Give details of expected output and usage)
+Used to manage individuals who have donated to the foundation for the use of knowing who has donated before, managing the donations they have received, how to contact them again to let them know about further opportunities to donate, and managing the materials necessary for putting on events.
+Their personal information: Their name, contact information, and relations is important for connecting a donation to an identity as well as containing their contact information to let them know of further opportunities to donate as well as send thank you letters in response to donations. 
+By who, for which event, and how much they gave to the foundation: So that we can have knowledge of the donations they have given already, what types of fundraisers they typically give to, and keep track of when each donation was given. This needs to be able to manage both donated objects and donated money. 
+To have the ability to group individuals so as to send emails to specific groups
+List the Requirements of your Database System
+Data
+What are the High-Level Entities (include descriptions)
+Personal Information - suffix, name, birth date, gender, birthdate, address, phone number, email address, how long been involved, etc. 
+Donation - Who donated it, how much, what date, for what event, and what type of donation (object or money).
+Event information - name, and date, though can also reference who donated to each event, and which groups are associated to which event.
+Prewritten Emails - Saving prewritten emails so that they can send the same email to many different donors, for example, to all donors who have donated to a specific fundraiser in the past
+What Data will be stored? What Data is available and in what format? Or will all Data be manually generated?
+Text and numerical will be stored
+Data will be displayed by person, by event, and by donation
+Data will be manually entered in by a data entry technician
+Functions
+What Functions will be Modeled? (include descriptions)
+Fundraiser Advertisements - having personal information to send postage, phone calls, etc. to previous donors letting them know of a new fundraiser
+Numerical Analysis - being able to analyze where different donations are coming from, how popular a certain fundraiser is versus another, how many donors there are, how much a particular individual has donated, etc.
+Donor Analysis - being able to analyze different donor demographics, such as their location of dwelling, age, gender, etc. 
+Email Bursts - sending mass emails to different groups of individuals which can be given an association
