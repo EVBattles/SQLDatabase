@@ -1,0 +1,21 @@
+Summary
+Final Deliverable Included in Submission
+My final deliverable includes:
+My SQL and Load Scripts,
+Pictures of various outputs produced by my database
+Updated Scope and Requirements
+Updated Business Rules
+Navicat EER Model (pdf)
+MySQL ER Model (pdf)
+How My Database Meets the Requirements
+My high-level entities listed in my requirements include:
+personal information held in the "person" table containing information such as person ID, prefix, name, suffix, birth date, gender, birthdate, address, phone number, email address, start date, and group IDs. This information can be gathered using the view personContact. All the donor information can be seen using the personInfoAll view and id and name can be seen using personInfoMinor view. 
+donation information, that is specific information concerning each donation. This information includes who donated the item or money, how much was donated, the event this donation was meant for, and what type of donation it was, being money or an object. This is done with tables "donation", "money", and "donatedItem". All of this information can be seen using the views donateMoneyInfo and donateObjectInfo;
+event information, that is the name and date which is stored in the table itself, and through table reference can determine donations attached to an event, groups attached to an event, and emails attached to an event. This is done through the "event" table and use of foreign keys throughout the database. This can be seen through the view eventInfo;
+prewritten emails, that is storing the title of the email and the body of the email and through use of foreign keys, the different groups connected to the email through which specific email addresses can be gained, as well as what event the email is connected with. This occurs through the use of the "email" table as well as foreign keys throughout the database. Most of this information can be seen using the emaiInfo view.
+The different functions listed in my requirements include:
+being able to send fundraiser advertisements via email, mail, and phone call to previous donors letting them know of a new fundraiser. This is included in the database by how the "email" table functions. Each email is attached to a group and each group is attached to individuals in the "person" table. Through a simple SEARCH function, someone can collect the contact information for each person in a particular group to make contact much easier as well as allowing the knowledge of who should be receiving contact. This could also work through the "event" table as well as one could search for any individual connected with an event and gain their contact information as well. This can also be seen through the personContact view.
+being able to conduct numerical analysis on donor information. Through the SUM function, one can request the total amount of money that has been donated for a specific event. This can also be done by using the moneySum view. One can also see how much one individual has donated as well. You can also search for how many donations have gone to a particular event and compare it to another to see which is more effective. 
+being able to conduct donor analysis by analyzing donor demographics such as location, age, and gender. All of this information is included in the "person" table and can easily be searched for all individuals. This can also be seen in the personDemo view. 
+being able to send email bursts to different groups of individuals. This works much the same way as the fundraiser advertisements, except this function also stores prewritten emails saved to the "email" table which are connected to specific events and specific groups in order to enable the ability to send out email bursts. 
+Overall, the database "donordata" has met every previous requirement set upon it. One portion that was added at the beginning of this assignment was the ability to create relationships between individuals. This did not get the time to make function well, so it is not included in this installment. 
