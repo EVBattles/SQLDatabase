@@ -1,0 +1,10 @@
+Business Rules
+
+Each person can be a part of many groups or no groups, but each group must have at least one person
+Each person must have one or many donations, and each donation must have one or many people
+Each donation must be money or an item
+A donated item must be connected to an event item, and each event item may have one or many items
+Money may be connected to an event, and each event may have one or many donated money
+Each group must have one or many events, and each event must have one or many groups
+Each email may be connected to many groups and each group may have many emails
+Each email must be connected to one and only one event, but each event may have many emails
